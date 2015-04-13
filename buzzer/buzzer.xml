@@ -1,0 +1,6 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="tone" id="15" x="63" y="88">
+    <field name="PIN">12</field>
+    <field name="FREQ">262</field>
+  </block>
+</xml>

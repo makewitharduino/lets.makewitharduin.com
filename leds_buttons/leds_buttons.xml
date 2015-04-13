@@ -1,0 +1,148 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_if" id="192" inline="false" x="88" y="-12">
+    <value name="IF0">
+      <block type="logic_compare" id="193" inline="true">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="inout_digital_read" id="194">
+            <field name="PIN">4</field>
+            <field name="INPUT_MODE">INPUT_PULLUP</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="inout_highlow" id="195">
+            <field name="BOOL">LOW</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="inout_digital_write" id="196">
+        <field name="PIN">9</field>
+        <field name="STAT">HIGH</field>
+        <next>
+          <block type="delay" id="197">
+            <field name="DELAY_TIME">1000</field>
+            <next>
+              <block type="inout_digital_write" id="198">
+                <field name="PIN">9</field>
+                <field name="STAT">LOW</field>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <next>
+      <block type="controls_if" id="199" inline="false">
+        <value name="IF0">
+          <block type="logic_compare" id="200" inline="true">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="inout_digital_read" id="201">
+                <field name="PIN">5</field>
+                <field name="INPUT_MODE">INPUT_PULLUP</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="inout_highlow" id="202">
+                <field name="BOOL">LOW</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="inout_digital_write" id="203">
+            <field name="PIN">10</field>
+            <field name="STAT">HIGH</field>
+            <next>
+              <block type="delay" id="204">
+                <field name="DELAY_TIME">1000</field>
+                <next>
+                  <block type="inout_digital_write" id="205">
+                    <field name="PIN">10</field>
+                    <field name="STAT">LOW</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_if" id="206" inline="false">
+            <value name="IF0">
+              <block type="logic_compare" id="207" inline="true">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="inout_digital_read" id="208">
+                    <field name="PIN">6</field>
+                    <field name="INPUT_MODE">INPUT_PULLUP</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="inout_highlow" id="209">
+                    <field name="BOOL">LOW</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="inout_digital_write" id="210">
+                <field name="PIN">11</field>
+                <field name="STAT">HIGH</field>
+                <next>
+                  <block type="delay" id="211">
+                    <field name="DELAY_TIME">1000</field>
+                    <next>
+                      <block type="inout_digital_write" id="212">
+                        <field name="PIN">11</field>
+                        <field name="STAT">LOW</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="213" inline="false">
+                <value name="IF0">
+                  <block type="logic_compare" id="214" inline="true">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="inout_digital_read" id="215">
+                        <field name="PIN">7</field>
+                        <field name="INPUT_MODE">INPUT_PULLUP</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="inout_highlow" id="216">
+                        <field name="BOOL">LOW</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="inout_digital_write" id="217">
+                    <field name="PIN">12</field>
+                    <field name="STAT">HIGH</field>
+                    <next>
+                      <block type="delay" id="218">
+                        <field name="DELAY_TIME">1000</field>
+                        <next>
+                          <block type="inout_digital_write" id="219">
+                            <field name="PIN">12</field>
+                            <field name="STAT">LOW</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

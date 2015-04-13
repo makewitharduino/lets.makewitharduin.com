@@ -1,0 +1,78 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_if" id="220" inline="false" x="88" y="-12">
+    <value name="IF0">
+      <block type="logic_compare" id="221" inline="true">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="inout_digital_read" id="222">
+            <field name="PIN">4</field>
+            <field name="INPUT_MODE">INPUT_PULLUP</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="inout_highlow" id="223">
+            <field name="BOOL">LOW</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="tone" id="256">
+        <field name="PIN">12</field>
+        <field name="FREQ">262</field>
+      </block>
+    </statement>
+    <next>
+      <block type="controls_if" id="227" inline="false">
+        <value name="IF0">
+          <block type="logic_compare" id="228" inline="true">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="inout_digital_read" id="229">
+                <field name="PIN">5</field>
+                <field name="INPUT_MODE">INPUT_PULLUP</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="inout_highlow" id="230">
+                <field name="BOOL">LOW</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="tone" id="257">
+            <field name="PIN">12</field>
+            <field name="FREQ">294</field>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_if" id="234" inline="false">
+            <value name="IF0">
+              <block type="logic_compare" id="235" inline="true">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="inout_digital_read" id="236">
+                    <field name="PIN">6</field>
+                    <field name="INPUT_MODE">INPUT_PULLUP</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="inout_highlow" id="237">
+                    <field name="BOOL">LOW</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="tone" id="258">
+                <field name="PIN">12</field>
+                <field name="FREQ">330</field>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

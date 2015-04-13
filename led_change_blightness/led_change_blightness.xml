@@ -1,0 +1,55 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="inout_analog_write" id="93" inline="true" x="13" y="13">
+    <field name="PIN">11</field>
+    <value name="NUM">
+      <block type="math_number" id="94">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <next>
+      <block type="delay" id="95">
+        <field name="DELAY_TIME">2000</field>
+        <next>
+          <block type="controls_for" id="96" inline="true">
+            <field name="VAR">i</field>
+            <value name="FROM">
+              <block type="math_number" id="97">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="math_number" id="98">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="inout_analog_write" id="99" inline="true">
+                <field name="PIN">11</field>
+                <value name="NUM">
+                  <block type="math_arithmetic" id="100" inline="true">
+                    <field name="OP">MULTIPLY</field>
+                    <value name="A">
+                      <block type="math_number" id="101">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="variables_get" id="102">
+                        <field name="VAR">i</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="delay" id="103">
+                    <field name="DELAY_TIME">500</field>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

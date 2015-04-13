@@ -1,0 +1,16 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="inout_analog_write" id="22" inline="true" x="113" y="88">
+    <field name="PIN">11</field>
+    <value name="NUM">
+      <block type="math_map" id="12" inline="false">
+        <field name="TOLOW">0</field>
+        <field name="TOHIGH">255</field>
+        <value name="VALUE">
+          <block type="inout_analog_read" id="36">
+            <field name="PIN">A0</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</xml>
