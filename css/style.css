@@ -19,3 +19,20 @@ header, main, footer {
 nav .brand-logo{
   padding-left: 48px;
 }
+
+nav .page-title{
+  font-size: 200%;
+  padding-left: 48px;
+}
+
+hr {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #bbb inset;
+}
+
+.caption {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}

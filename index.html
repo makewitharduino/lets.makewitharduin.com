@@ -1,162 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Let's Make With Arduino!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Let's Make With Arduino!</title>
 
-  <!-- CSS  -->
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
 </head>
+
 <body>
-  <header>
-    <nav class="teal" role="navigation">
-      <div class="nav-wrapper"><a id="logo-container" href="./" class="brand-logo">Let's Make With Arduino!</a>
-        <ul id="nav-mobile" class="side-nav collapsible fixed" data-collapsible="accordion">
-          <li><a href="samplelist1.html">はじめに</a></li>
-          <li class="no-padding">
-            <ul class="collapsible collapsible-accordion">
-              <li class="bold">
-                <a class="collapsible-header waves-effect waves-teal">光であそぶ</a>
-                <div class="collapsible-body">
-                  <ul>
-                    <li><a href="list1.html">サンプル一覧</a></li>
-                    <li><a href="#">サンプル1</a></li>
-                    <li><a href="#">サンプル2</a></li>
-                    <li><a href="#">サンプル3</a></li>
-                    <li><a href="#">サンプル4</a></li>
-                    <li><a href="#">サンプル5</a></li>
-                    <li><a href="#">サンプル6</a></li>
-                  </ul>
+    <header>
+        <nav class="teal">
+            <div class="nav-wrapper"><a id="logo-container" href="./" class="brand-logo">Let's Make With Arduino!</a>
+                <ul id="nav-mobile" class="side-nav fixed"></ul>
+                <script type="application/javascript">
+                    writeSideNav();
+                </script>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="images/photo2.jpg">
+            </div>
+        </div>
+        <div class="section white">
+            <div class="row container">
+                <h2 class="header center orange-text">Arduinoで遊んでみよう！</h2>
+                <div class="row">
+                    <h5 class="header col s12 light">Arduinoと少しの電子部品があれば、いろいろなサンプルにチャレンジできます。<br><br>サンプルを通して、電子工作とプログラミングの基礎がわかれば、自分なりにリミックスして遊んでみてください。</h5>
                 </div>
-              </li>
-            </ul>
-          </li>
-          <li class="no-padding">
-            <ul class="collapsible collapsible-accordion">
-              <li class="bold">
-                <a class="collapsible-header waves-effect waves-teal">音であそぶ</a>
-                <div class="collapsible-body">
-                  <ul>
-                    <li><a href="#">サンプル1</a></li>
-                    <li><a href="#">サンプル2</a></li>
-                    <li><a href="#">サンプル3</a></li>
-                    <li><a href="#">サンプル4</a></li>
-                    <li><a href="#">サンプル5</a></li>
-                    <li><a href="#">サンプル6</a></li>
-                  </ul>
+                <div class="row center">
+                    <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">さあ、はじめよう！</a>
                 </div>
-              </li>
-            </ul>
-          </li>
-          <li class="no-padding">
-            <ul class="collapsible collapsible-accordion">
-              <li class="bold">
-                <a class="collapsible-header waves-effect waves-teal">センサーであそぶ</a>
-                <div class="collapsible-body">
-                  <ul>
-                    <li><a href="#">サンプル1</a></li>
-                    <li><a href="#">サンプル2</a></li>
-                    <li><a href="#">サンプル3</a></li>
-                    <li><a href="#">サンプル4</a></li>
-                    <li><a href="#">サンプル5</a></li>
-                    <li><a href="#">サンプル6</a></li>
-                  </ul>
+            </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="images/photo1.jpg">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <br>
+                <h5 class="header col s12 light">電子工作のサンプルのほか、Arduinoを簡単にプログラミングできるツールも紹介しています。</h5>
+            </div>
+            <div class="section">
+                <!--   Icon Section   -->
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="mdi-editor-border-color"></i></h2>
+                            <h5 class="center">BlocklyDuino<br>(Web App)</h5>
+                            <p class="light">Scratchのように、ブロックを組み合わせて、ArduinoのプログラミングができるオンラインWebエディタです。</p>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="mdi-action-get-app"></i></h2>
+                            <h5 class="center">BlocklyDuino<br>(Chrome App)</h5>
+                            <p class="light">BlocklyDuino(Web App)のChrome App版です。
+                                <br>
+                                <br>オフラインで動作するので、インターネットがなくても、プログラミングが可能です。</p>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="mdi-action-extension"></i></h2>
+                            <h5 class="center">Scratch Extension<br><br></h5>
+                            <p class="light">Scratch2.0 オフラインエディターからArduinoをプログラミングできる拡張機能です。このツールがあれば、Scratchの中に、Arduinoと連携したプログラムを作成することができます。</p>
+                        </div>
+                    </div>
                 </div>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#">シールドを使ってみる</a></li>
-          <li><a href="#">Scratchで遊ぶ</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <div class="parallax-container">
-      <div class="parallax"><img src="images/photo2.jpg"></div>
-    </div>
-    <div class="section white">
-      <div class="row container">
-        <h2 class="header center orange-text">Arduinoで遊んでみよう！</h2>
-        <div class="row">
-          <h5 class="header col s12 light">Arduinoと少しの電子部品があれば、いろいろなサンプルにチャレンジできます。<br><br>サンプルを通して、電子工作とプログラミングの基礎がわかれば、自分なりにリミックスして遊んでみてください。</h5>
+            </div>
         </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">さあ、はじめよう！</a>
-        </div>
-        </div>
-      </div>
-    <div class="parallax-container">
-      <div class="parallax"><img src="images/photo1.jpg"></div>
-    </div>
+    </main>
 
-       <div class="container">
-         <div class="row">
-            <br>
-           <h5 class="header col s12 light">電子工作のサンプルのほか、Arduinoを簡単にプログラミングできるツールも紹介しています。</h5></div>
-         <div class="section">
-             <!--   Icon Section   -->
-           <div class="row">
-             <div class="col s12 m4">
-               <div class="icon-block">
-                 <h2 class="center light-blue-text"><i class="mdi-editor-border-color"></i></h2>
-                 <h5 class="center">BlocklyDuino<br>(Web App)</h5>
-                 <p class="light">Scratchのように、ブロックを組み合わせて、ArduinoのプログラミングができるオンラインWebエディタです。</div>
-             </div>
+    <footer class="page-footer teal"></footer>
+</body>
 
-             <div class="col s12 m4">
-               <div class="icon-block">
-                 <h2 class="center light-blue-text"><i class="mdi-action-get-app"></i></h2>
-                 <h5 class="center">BlocklyDuino<br>(Chrome App)</h5>
-                 <p class="light">BlocklyDuino(Web App)のChrome App版です。<br><br>オフラインで動作するので、インターネットがなくても、プログラミングが可能です。</div>
-             </div>
-
-             <div class="col s12 m4">
-               <div class="icon-block">
-                 <h2 class="center light-blue-text"><i class="mdi-action-extension"></i></h2>
-                 <h5 class="center">Scratch Extension<br><br></h5>
-                 <p class="light">Scratch2.0 オフラインエディターからArduinoをプログラミングできる拡張機能です。このツールがあれば、Scratchの中に、Arduinoと連携したプログラムを作成することができます。</p>
-               </div>
-             </div>
-           </div>
-         </div>
-      </div>
-    </div>
-  </main>
-
-  <footer class="page-footer teal">
-    <div class="container">
-      <div class="row">
-        <div class="col l8 s12">
-          <h5 class="white-text">ひとこと</h5>
-          <p class="grey-text text-lighten-4">このサイトは、子どもたちのプログラミング学習にArduinoを活用できないかなと考えたことから、スタートしました。<br>このサイトを通して、Arduino、電子工作、プログラミングに興味を持ってもらい、その後いろいろなところで活用してもらえるとうれしいです。</p>
-
-        </div>
-        <div class="col l4 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Facebook Page</a></li>
-            <li><a class="white-text" href="#!">Twitter</a></li>
-            <li><a class="white-text" href="#!">Vine</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  </body>
 </html>

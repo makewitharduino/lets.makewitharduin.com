@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Let's Make With Arduino!</title>
+
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="top-nav teal" role="navigation">
+            <div class="nav-wrapper"><a class="page-title">はじめに</a>
+                <ul id="nav-mobile" class="side-nav fixed"></ul>
+                <script type="application/javascript">
+                    writeSideNav();
+                    $("#info").addClass("active");
+                </script>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m9 l10">
+                    <h3>Let’s Make with Arduino！にようこそ</h3>
+                    <p>このサイトでは、Arduinoでいろいろ作って、遊びたい人のために様々なサンプルを紹介しています。</p>
+                    <p>まずは動画を眺めて、面白そうな作品があったら、配線を参考にArduinoと部品をつないで、サンプルコードを書き込んでみてください。</p>
+                    <p>そして、自分なりのアイデアでコードを書き換えてみてください。</p>
+
+                    <div id="tools" class="section scrollspy">
+                        <h3>必要なもの</h3>
+                        <p>まずは、Arduinoとブレッドボード、ジャンパーコードを買ってください。
+                            <br/>それ以外の部品は、各サンプルで随時必要になる部品を紹介しています。</p>
+                        <ul class="collection">
+                            <li class="collection-item"><a href="http://www.amazon.co.jp/gp/product/B0025Y6C5G/ref=as_li_ss_tl?ie=UTF8&amp;camp=247&amp;creative=7399&amp;creativeASIN=B0025Y6C5G&amp;linkCode=as2&amp;tag=makewitharduino-22">Arduinoをはじめようキット</a>
+                                <br>（もし、初めてArduinoを買うなら、このキットでほぼ揃います。）</li>
+                            <li class="collection-item"><a href="http://www.amazon.co.jp/gp/product/B0044X2E5S/ref=as_li_ss_tl?ie=UTF8&amp;camp=247&amp;creative=7399&amp;creativeASIN=B0044X2E5S&amp;linkCode=as2&amp;tag=makewitharduino-22">永久保証付きArduino</a>
+                                <br>（Arduino単体なら、これ。壊れても、交換してもらえますよ！）</li>
+                            <li class="collection-item"><a href="http://akizukidenshi.com/catalog/g/gP-05294/">ブレッドボード</a>
+                                <br>（複数あってもいいと思います。いや、複数あったほうがいいです！）</li>
+                            <li class="collection-item"><a href="http://akizukidenshi.com/catalog/g/gC-05159/">ジャンパーコード</a>
+                                <br>（いっぱい使うので、60本以上あっても無駄になりません！）</li>
+                        </ul>
+                        <p>秋月電子通商さんは、いろんな部品をまとめて買えば、すっごくお得です。おすすめです。</p>
+                    </div>
+
+                    <div id="software" class="section scrollspy">
+                        <h3>ソフトウェア</h3>
+                        <p>まずは、Arduinoの公式エディタとなる<a href="http://arduino.cc/en/main/software">Arduino IDE</a>をインストールしましょう。
+                            <br/>Arduino用のUSBドライバも一緒にインストールできます。
+                        </p>
+                        <p>次に、<a href="http://code.makewitharduino.com">BlocklyDuino</a>でプログラミングできるようにしましょう。
+                            <br/>当サイトで紹介しているサンプルは、すべて
+                            <a href="http://code.makewitharduino.com">BlocklyDuino</a>で記述しています。</p>
+                    </div>
+                </div>
+                <div class="col hide-on-small-only m3 l2">
+                    <ul class="section table-of-contents fixed">
+                        <li><a href="#tools">必要なもの</a>
+                        </li>
+                        <li><a href="#software">ソフトウェア</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </main>
+
+    <footer class="page-footer teal">
+    </footer>
+</body>
+
+</html>
