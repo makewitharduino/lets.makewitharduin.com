@@ -36,3 +36,7 @@ hr {
   font-weight: 300;
   margin-bottom: 30px;
 }
+
+.page-list{
+  height: 0px;
+}
