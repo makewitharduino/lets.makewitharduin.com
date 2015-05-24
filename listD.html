@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Let's Make With Arduino!</title>
+
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="teal" role="navigation">
+            <div class="nav-wrapper"><a class="page-title">センサーであそぶ</a>
+                <ul id="nav-mobile" class="side-nav fixed"></ul>
+                <script type="application/javascript">
+                    writeSideNav();
+                    $("#categoryD").addClass("active");
+                    $("#listD").toggleClass("active");
+                </script>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/sampleD1.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>距離を測ります。</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="sampleD1.html">サンプルD1</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/sampleD2.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>湿度と温度を測ります。</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="sampleD2.html">サンプルD2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer teal">
+    </footer>
+</body>
+
+</html>
