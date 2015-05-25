@@ -16,15 +16,6 @@ header, main, footer {
   }
 }
 
-nav .brand-logo{
-  padding-left: 48px;
-}
-
-nav .page-title{
-  font-size: 200%;
-  padding-left: 48px;
-}
-
 hr {
   height: 10px;
   border: 0;
@@ -39,4 +30,32 @@ hr {
 
 .page-list{
   height: 0px;
+}
+
+.button-collapse{
+  padding-left: 48px;
+}
+
+.page-title{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.page-title h4{
+  color: white;
+  padding-left: 48px;
+}
+
+.top-title{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.top-title h4{
+  color: white;
+  padding-left: 48px;
+}
+
+.top-title .row{
+  margin-bottom: 0px;
 }
