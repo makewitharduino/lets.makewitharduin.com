@@ -40,8 +40,10 @@ function sendChrome(url){
   if (userAgent.indexOf('chrome') != -1){
     console.log(url);
     // 確認ボタン付きのダイアログボックスを表示する
-    var extId = "iifdemeggncblnkkabpindccgfgeeokn";
+    var extId = "ohncgafccgdbigbbikgkfbkiebahihmb";
     chrome.runtime.sendMessage(extId, {url : url});
+  }else{
+    Materialize.toast('Chromeブラウザのみ対応', 4000);
   }
   return false;
 }
