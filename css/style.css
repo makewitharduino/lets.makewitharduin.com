@@ -63,6 +63,18 @@ hr {
     padding-left: 0;
   }
   .top-title h4{
+    padding-left: 48px;
+  }
+  .page-title h4{
+    padding-left: 48px;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+  .top-title h4{
     padding-left: 0px;
   }
   .page-title h4{

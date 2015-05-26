@@ -34,3 +34,14 @@ function writeFooter() {
         }
     });
 }
+
+function sendChrome(url){
+  var userAgent = window.navigator.userAgent.toLowerCase();
+  if (userAgent.indexOf('chrome') != -1){
+    console.log(url);
+    // 確認ボタン付きのダイアログボックスを表示する
+    var extId = "iifdemeggncblnkkabpindccgfgeeokn";
+    chrome.runtime.sendMessage(extId, {url : url});
+  }
+  return false;
+}
