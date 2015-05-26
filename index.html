@@ -31,13 +31,13 @@
     </header>
 
     <main>
-      <div class="section top-title teal" id="index-banner">
-        <div class="row">
-          <div class="col s12">
-            <h4 class="header center-on-small-only">Let's Make With Arduino!</h4>
-          </div>
+        <div class="section top-title teal" id="index-banner">
+            <div class="row">
+                <div class="col s12">
+                    <h4 class="header center-on-small-only">Let's Make With Arduino!</h4>
+                </div>
+            </div>
         </div>
-      </div>
 
         <div class="parallax-container">
             <div class="parallax">
@@ -51,7 +51,7 @@
                     <h5 class="header col s12 light">Arduinoと少しの電子部品があれば、いろいろなサンプルにチャレンジできます。<br><br>サンプルを通して、電子工作とプログラミングの基礎がわかれば、自分なりにリミックスして遊んでみてください。</h5>
                 </div>
                 <div class="row center">
-                    <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">さあ、はじめよう！</a>
+                    <a href="getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">さあ、はじめよう！</a>
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@
                 <div class="row">
                     <div class="col s12 m4">
                         <div class="icon-block">
-                          <h2 class="center light-blue-text"><a href="#!"><i class="mdi-editor-border-color"></i></a></h2>
+                            <h2 class="center light-blue-text"><a href="#!"><i class="mdi-editor-border-color"></i></a></h2>
                             <h5 class="center">BlocklyDuino<br>(Web App)</h5>
                             <p class="light">Scratchのように、ブロックを組み合わせて、ArduinoのプログラミングができるオンラインWebエディタです。</p>
                         </div>
@@ -79,7 +79,7 @@
 
                     <div class="col s12 m4">
                         <div class="icon-block">
-                          <h2 class="center light-blue-text"><a href="#!"><i class="mdi-action-get-app"></i></a></h2>
+                            <h2 class="center light-blue-text"><a href="#!"><i class="mdi-action-get-app"></i></a></h2>
                             <h5 class="center">BlocklyDuino<br>(Chrome App)</h5>
                             <p class="light">BlocklyDuino(Web App)のChrome App版です。
                                 <br>
@@ -89,7 +89,7 @@
 
                     <div class="col s12 m4">
                         <div class="icon-block">
-                          <h2 class="center light-blue-text"><a href="#!"><i class="mdi-action-extension"></i></a></h2>
+                            <h2 class="center light-blue-text"><a href="#!"><i class="mdi-action-extension"></i></a></h2>
                             <h5 class="center">Scratch Extension<br><br></h5>
                             <p class="light">Scratch2.0 オフラインエディターからArduinoをプログラミングできる拡張機能です。このツールがあれば、Scratchの中に、Arduinoと連携したプログラムを作成することができます。</p>
                         </div>
@@ -101,5 +101,37 @@
 
     <footer class="page-footer teal"></footer>
 </body>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId: '786847604761953',
+            xfbml: true,
+            version: 'v2.3'
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div id="fb-root"></div>
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.3&appId=164333185864";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
 </html>

@@ -68,5 +68,10 @@ hr {
   .page-title h4{
     padding-left: 0px;
   }
-
 }
+
+.page-footer ul li{
+  margin: 5px;
+}
+
+
