@@ -1,4 +1,5 @@
 /* Custom Stylesheet */
+
 /**
  * Use this file to override Materialize files so you can update
  * the core Materialize files in the future
@@ -6,88 +7,84 @@
  * Made By MaterializeCSS.com
  */
 
-header, main, footer {
-  padding-left: 240px;
+header,
+main,
+footer {
+    padding-left: 240px;
 }
-
 hr {
-  height: 10px;
-  border: 0;
-  box-shadow: 0 10px 10px -10px #bbb inset;
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #bbb inset;
 }
-
 .caption {
-  font-size: 1.25rem;
-  font-weight: 300;
-  margin-bottom: 30px;
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 30px;
 }
-
-.page-list{
-  height: 0px;
+.page-list {
+    height: 0px;
 }
-
-.button-collapse{
-  padding-left: 48px;
-}
-
-.page-title{
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.page-title h4{
-  color: white;
-  padding-left: 48px;
-}
-
-.top-title{
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.top-title h4{
-  color: white;
-  padding-left: 48px;
-}
-
-.top-title .row{
-  margin-bottom: 0px;
-}
-
-.btn{
-  margin: 5px;
-}
-
-@media only screen and (max-width : 992px) {
-  header, main, footer {
-    padding-left: 0;
-  }
-  .top-title h4{
+.button-collapse {
     padding-left: 48px;
-  }
-  .page-title h4{
+}
+.page-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.page-title h4 {
+    color: white;
     padding-left: 48px;
-  }
 }
-
-@media only screen and (max-width : 600px) {
-  header, main, footer {
-    padding-left: 0;
-  }
-  .top-title h4{
-    padding-left: 0px;
-  }
-  .page-title h4{
-    padding-left: 0px;
-  }
+.page-title .row {
+    margin-bottom: 0px;
 }
-
-.page-footer ul li{
-  margin: 5px;
+.top-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
-.nav-top{
-  font-weight: 600;
+.top-title h4 {
+    color: white;
+    padding-left: 48px;
 }
-
-
+.top-title .row {
+    margin-bottom: 0px;
+}
+.btn {
+    margin: 5px;
+}
+@media only screen and (max-width: 992px) {
+    header,
+    main,
+    footer {
+        padding-left: 0;
+    }
+    .top-title h4 {
+        padding-left: 48px;
+    }
+    .page-title h4 {
+        padding-left: 48px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    header,
+    main,
+    footer {
+        padding-left: 0;
+    }
+    .top-title h4 {
+        padding-left: 0px;
+    }
+    .page-title h4 {
+        padding-left: 0px;
+    }
+}
+.page-footer ul li {
+    margin: 5px;
+}
+.nav-top {
+    font-weight: 600;
+}
+.table-of-contents a.level2{
+    padding-left: 40px;
+}
