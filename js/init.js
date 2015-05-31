@@ -10,6 +10,7 @@
             accordion: true // A setting that changes the collapsible behavior to expandable instead of the default accordion style
         });
         $('.scrollspy').scrollSpy();
+
     }); // end of document ready
 })(jQuery); // end of jQuery name space
 
@@ -47,3 +48,19 @@ function sendChrome(url){
   }
   return false;
 }
+
+$(document).ready(function() {
+  var pagetop = $('.pagetop');
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 400) {
+      pagetop.css('visibility','visible');
+      pagetop.fadeIn();
+    } else {
+      pagetop.fadeOut();
+    }
+  });
+  pagetop.click(function () {
+    $('body, html').animate({ scrollTop: 0 }, 500);
+    return false;
+  });
+});
