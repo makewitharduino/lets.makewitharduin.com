@@ -10,6 +10,9 @@
             accordion: true // A setting that changes the collapsible behavior to expandable instead of the default accordion style
         });
         $('.scrollspy').scrollSpy();
+        $('.slider').slider({
+            full_width: true
+        });
 
     }); // end of document ready
 })(jQuery); // end of jQuery name space
@@ -36,31 +39,35 @@ function writeFooter() {
     });
 }
 
-function sendChrome(url){
-  var userAgent = window.navigator.userAgent.toLowerCase();
-  if (userAgent.indexOf('chrome') != -1){
-    console.log(url);
-    // 確認ボタン付きのダイアログボックスを表示する
-    var extId = "ohncgafccgdbigbbikgkfbkiebahihmb";
-    chrome.runtime.sendMessage(extId, {url : url});
-  }else{
-    Materialize.toast('Chromeブラウザのみ対応', 4000);
-  }
-  return false;
+function sendChrome(url) {
+    var userAgent = window.navigator.userAgent.toLowerCase();
+    if (userAgent.indexOf('chrome') != -1) {
+        console.log(url);
+        // 確認ボタン付きのダイアログボックスを表示する
+        var extId = "ohncgafccgdbigbbikgkfbkiebahihmb";
+        chrome.runtime.sendMessage(extId, {
+            url: url
+        });
+    } else {
+        Materialize.toast('Chromeブラウザのみ対応', 4000);
+    }
+    return false;
 }
 
 $(document).ready(function() {
-  var pagetop = $('.pagetop');
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 400) {
-      pagetop.css('visibility','visible');
-      pagetop.fadeIn();
-    } else {
-      pagetop.fadeOut();
-    }
-  });
-  pagetop.click(function () {
-    $('body, html').animate({ scrollTop: 0 }, 500);
-    return false;
-  });
+    var pagetop = $('.pagetop');
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 400) {
+            pagetop.css('visibility', 'visible');
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    });
+    pagetop.click(function() {
+        $('body, html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
 });

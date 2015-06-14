@@ -99,3 +99,7 @@ hr {
   right: 24px;
   visibility: hidden;
 }
+
+.slider .caption h3{
+  color: cadetblue;
+}
