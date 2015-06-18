@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Let's Make With Arduino!</title>
+
+    <!-- CSS  -->
+    <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/js/materialize.js"></script>
+    <script src="/js/init.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="page-list teal" role="navigation">
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="side-nav fixed"></ul>
+                <script type="application/javascript">
+                    writeSideNav();
+                    $("#categoryG").addClass("active");
+                    $("#sampleG2").toggleClass("active");
+                </script>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="section page-title teal" id="index-banner">
+            <div class="row">
+                <div class="col s12">
+                    <h4 class="header center-on-small-only">サンプルG2</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m9 l10">
+                    <div id="videos" class="section scrollspy">
+                        <h5 class="header">動画</h5>
+                        <p class="caption">このサンプルでは、Arduinoへ文字を送り、0なら"OK"を、それ以外なら"NG"を返しています。</p>
+                        <div class="video-container">
+                          <iframe src="https://vine.co/v/ehBh0pMJ0pO/embed/simple" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+                        </div>
+                    </div>
+                    <div id="codes" class="section scrollspy">
+                        <h5 class="header">サンプルコード</h5>
+                      <a class="light-blue darken-1 waves-effect waves-light btn" href="http://code.makewitharduino.com?url=https://raw.githubusercontent.com/okhiroyuki/BlocklyDuinoSample/master/g2/g2.xml">Webで開く</a>
+                      <a class="light-blue darken-1 waves-effect waves-light btn" onclick="sendChrome('https://raw.githubusercontent.com/okhiroyuki/BlocklyDuinoSample/master/g2/g2.xml')">ChromeAppで開く</a>
+                    </div>
+                </div>
+                <div class="col hide-on-small-only m3 l2">
+                    <ul class="section table-of-contents fixed">
+                        <li><a href="#videos">動画</a>
+                        </li>
+                        <li><a href="#codes">サンプルコード</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer teal">
+    </footer>
+</body>
+
+</html>
