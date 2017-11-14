@@ -10,7 +10,7 @@
 header,
 main,
 footer {
-    padding-left: 240px;
+    padding-left: 300px;
 }
 hr {
     height: 10px;
@@ -88,18 +88,15 @@ hr {
 .table-of-contents a.level2{
     padding-left: 40px;
 }
-
 .table-of-contents li{
   padding-top: 7px;
   padding-bottom: 7px;
 }
-
 .fixed-action-btn{
   bottom: 45px;
   right: 24px;
   visibility: hidden;
 }
-
 .slider .caption h3{
   color: cadetblue;
 }
