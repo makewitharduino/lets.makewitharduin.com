@@ -2,24 +2,24 @@ module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks
 
     grunt.initConfig({
-        pkg:{
-            path:{
+        pkg: {
+            path: {
                 src: 'src',
                 dest: 'dist'
             }
         },
-        csslint:{
+        csslint: {
             options: {
                 csslintrc: '.csslintrc'
-              },
-            strict:{
-                options:{
+            },
+            strict: {
+                options: {
                     import: 2
                 },
                 src: ['<%= pkg.path.src %>/css/style.css']
             },
-            lax:{
-                options:{
+            lax: {
+                options: {
                     import: false
                 },
                 src: ['<%= pkg.path.src %>/css/style.css']
@@ -28,37 +28,35 @@ module.exports = function (grunt) {
         jshint: {
             files: ['<%= pkg.path.src %>/js/init.js'],
             options: {
-              jshintrc: '.jshintrc',
-              force: true
-            }
-          },
-        cssmin : {
-            dist : {
-              src : ['<%= pkg.path.src %>/css/materialize.css','<%= pkg.path.src %>/css/style.css'],
-              dest : '<%= pkg.path.dest %>/css/all.min.css'
+                jshintrc: '.jshintrc',
+                force: true
             }
         },
-        uglify : {
-            build : {
-              src : ['<%= pkg.path.src %>/js/materialize.js','<%= pkg.path.src %>/js/init.js'],
-              dest : '<%= pkg.path.dest %>/js/all.min.js'
+        cssmin: {
+            dist: {
+                src: ['<%= pkg.path.src %>/css/materialize.css', '<%= pkg.path.src %>/css/style.css'],
+                dest: '<%= pkg.path.dest %>/css/all.min.css'
+            }
+        },
+        uglify: {
+            build: {
+                src: ['<%= pkg.path.src %>/js/materialize.js', '<%= pkg.path.src %>/js/init.js'],
+                dest: '<%= pkg.path.dest %>/js/all.min.js'
             }
         },
         copy: {
             build: {
-                files: [
-                    {
-                        expand: true,
-                        cwd: '<%= pkg.path.src %>',
-                        src: [
-                            'images/*',
-                            'fonts/*/*',
-                            'footer.html',
-                            'sidenav.html'
-                        ],
-                        dest: '<%= pkg.path.dest %>/'
-                    }
-                ],
+                files: [{
+                    expand: true,
+                    cwd: '<%= pkg.path.src %>',
+                    src: [
+                        'images/*',
+                        'fonts/*/*',
+                        'footer.html',
+                        'sidenav.html'
+                    ],
+                    dest: '<%= pkg.path.dest %>/'
+                }],
             },
         },
         clean: {
@@ -102,14 +100,20 @@ module.exports = function (grunt) {
         },
         connect: {
             server: {
-              options: {
-                port: 9001,
-                keepalive: true,
-                base: '<%= pkg.path.dest %>',
-                hostname: 'localhost'
-              }
+                options: {
+                    port: 9001,
+                    keepalive: true,
+                    base: '<%= pkg.path.dest %>',
+                    hostname: 'localhost'
+                }
             }
-          }
+        },
+        'gh-pages': {
+            options: {
+                base: 'dist'
+            },
+            src: ['**']
+        }
     });
     grunt.loadNpmTasks('grunt-html-build');
     grunt.loadNpmTasks('grunt-contrib-connect');
@@ -117,7 +121,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-csslint');
+    grunt.loadNpmTasks('grunt-gh-pages');
 
     grunt.registerTask('build', ['clean', 'cssmin', 'uglify', 'copy', 'htmlbuild']);
     grunt.registerTask('test', ['clean', 'cssmin', 'uglify', 'copy', 'htmlbuild', 'connect']);
+    grunt.registerTask('deploy', ['gh-pages']);
 }
