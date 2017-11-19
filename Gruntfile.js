@@ -52,7 +52,8 @@ module.exports = function (grunt) {
                     src: [
                         'CNAME',
                         'images/*',
-                        'fonts/*/*',
+                        'images/**/*.png',
+                        'fonts/**/*',
                         'footer.html',
                         'sidenav.html'
                     ],
@@ -124,7 +125,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-gh-pages');
 
-    grunt.registerTask('build', ['clean', 'cssmin', 'uglify', 'copy', 'htmlbuild']);
     grunt.registerTask('test', ['clean', 'cssmin', 'uglify', 'copy', 'htmlbuild', 'connect']);
-    grunt.registerTask('deploy', ['gh-pages']);
+    grunt.registerTask('build', ['clean', 'cssmin', 'uglify', 'copy', 'htmlbuild','gh-pages']);
 }
