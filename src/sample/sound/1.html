@@ -22,10 +22,11 @@
                 <ul id="nav-mobile" class="side-nav fixed"></ul>
                 <script type="application/javascript">
                     writeSideNav();
-                    $("#categoryB").addClass("active");
-                    $("#sampleB1").toggleClass("active");
+                    $("#sound").addClass("active");
                 </script>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                    <i class="mdi-navigation-menu"></i>
+                </a>
             </div>
         </nav>
     </header>
@@ -62,19 +63,25 @@
                     </div>
                     <div id="codes" class="section scrollspy">
                         <h5 class="header">サンプルコード</h5>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" href="http://code.makewitharduino.com?url=https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/b1/b1.xml">Webで開く</a>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" onclick="sendChrome('https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/b1/b1.xml')">ChromeAppで開く</a>
+                        <input id="code" value='<xml xmlns="http://www.w3.org/1999/xhtml"><block type="tone" id="15" x="63" y="88"><field name="PIN">12</field><field name="FREQ">262</field></block></xml>'>
+                        <button class="light-blue darken-1 waves-effect waves-light btn" data-clipboard-target="#code">
+                            <i class="material-icons">content_copy</i>クリップボードにコピー
+                        </button>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
                     <ul class="section table-of-contents fixed">
-                        <li><a href="#videos">動画</a>
+                        <li>
+                            <a href="#videos">動画</a>
                         </li>
-                        <li><a href="#wiring">配線図</a>
+                        <li>
+                            <a href="#wiring">配線図</a>
                         </li>
-                        <li><a href="#parts">使用部品</a>
+                        <li>
+                            <a href="#parts">使用部品</a>
                         </li>
-                        <li><a href="#codes">サンプルコード</a>
+                        <li>
+                            <a href="#codes">サンプルコード</a>
                         </li>
                     </ul>
                 </div>

@@ -23,10 +23,11 @@
                 <ul id="nav-mobile" class="side-nav fixed"></ul>
                 <script type="application/javascript">
                     writeSideNav();
-                    $("#categoryA").addClass("active");
-                    $("#sampleA6").toggleClass("active");
+                    $("#led").addClass("active");
                 </script>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                    <i class="mdi-navigation-menu"></i>
+                </a>
             </div>
         </nav>
     </header>
@@ -45,7 +46,8 @@
                         <h5 class="header">動画</h5>
                         <p class="caption">このサンプルでは、光センサーを使って、光の明るさに応じて、LEDの色を変化させています。</p>
                         <div class="video-container">
-                          <iframe src="https://vine.co/v/OYvqZ0XzVFp/embed/simple" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+                            <iframe src="https://vine.co/v/OYvqZ0XzVFp/embed/simple" width="300" height="300" frameborder="0"></iframe>
+                            <script src="https://platform.vine.co/static/scripts/embed.js"></script>
                         </div>
                     </div>
                     <div id="wiring" class="section scrollspy">
@@ -61,23 +63,29 @@
                             <a href="http://akizukidenshi.com/catalog/g/gP-00242/" class="collection-item">小型ボリューム 10kΩ</a>
                             <a href="http://akizukidenshi.com/catalog/g/gP-01001/" class="collection-item">小型ボリューム用つまみ</a>
                             <a href="http://akizukidenshi.com/catalog/g/gI-00110/" class="collection-item">CDSセル 5mmタイプ</a>
-                  </div>
+                        </div>
                     </div>
                     <div id="codes" class="section scrollspy">
                         <h5 class="header">サンプルコード</h5>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" href="http://code.makewitharduino.com?url=https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/a6/a6.xml">Webで開く</a>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" onclick="sendChrome('https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/a6/a6.xml')">ChromeAppで開く</a>
+                        <input id="code" value='<xml xmlns="http://www.w3.org/1999/xhtml"><block type="serial_println" id="1" inline="false" x="38" y="188"><value name="CONTENT"><block type="inout_analog_read" id="2"><field name="PIN">A0</field></block></value><next><block type="delay" id="3"><field name="DELAY_TIME">1000</field><next><block type="inout_analog_write" id="16" inline="true"><field name="PIN">11</field><value name="NUM"><block type="math_custom_map" id="4" inline="false"><field name="FROMLOW">100</field><field name="FROMHIGH">1000</field><field name="TOLOW">0</field><field name="TOHIGH">255</field><value name="VALUE"><block type="inout_analog_read" id="5"><field name="PIN">A0</field></block></value></block></value></block></next></block></next></block></xml>'>
+                        <button class="light-blue darken-1 waves-effect waves-light btn" data-clipboard-target="#code">
+                            <i class="material-icons">content_copy</i>クリップボードにコピー
+                        </button>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
                     <ul class="section table-of-contents fixed">
-                        <li><a href="#videos">動画</a>
+                        <li>
+                            <a href="#videos">動画</a>
                         </li>
-                        <li><a href="#wiring">配線図</a>
+                        <li>
+                            <a href="#wiring">配線図</a>
                         </li>
-                        <li><a href="#parts">使用部品</a>
+                        <li>
+                            <a href="#parts">使用部品</a>
                         </li>
-                        <li><a href="#codes">サンプルコード</a>
+                        <li>
+                            <a href="#codes">サンプルコード</a>
                         </li>
                     </ul>
                 </div>

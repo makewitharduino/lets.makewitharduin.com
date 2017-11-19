@@ -23,10 +23,11 @@
                 <ul id="nav-mobile" class="side-nav fixed"></ul>
                 <script type="application/javascript">
                     writeSideNav();
-                    $("#categoryG").addClass("active");
-                    $("#sampleG2").toggleClass("active");
+                    $("#serial").addClass("active");
                 </script>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                    <i class="mdi-navigation-menu"></i>
+                </a>
             </div>
         </nav>
     </header>
@@ -46,20 +47,25 @@
                         <h5 class="header">動画</h5>
                         <p class="caption">このサンプルでは、Arduinoへ文字を送り、0なら"OK"を、それ以外なら"NG"を返しています。</p>
                         <div class="video-container">
-                          <iframe src="https://vine.co/v/ehBh0pMJ0pO/embed/simple" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+                            <iframe src="https://vine.co/v/ehBh0pMJ0pO/embed/simple" width="300" height="300" frameborder="0"></iframe>
+                            <script src="https://platform.vine.co/static/scripts/embed.js"></script>
                         </div>
                     </div>
                     <div id="codes" class="section scrollspy">
                         <h5 class="header">サンプルコード</h5>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" href="http://code.makewitharduino.com?url=https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/g2/g2.xml">Webで開く</a>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" onclick="sendChrome('https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/g2/g2.xml')">ChromeAppで開く</a>
+                        <input id="code" value='<xml xmlns="http://www.w3.org/1999/xhtml"><block type="controls_if" id="1" inline="false" x="88" y="63"><value name="IF0"><block type="logic_compare" id="2" inline="true"><field name="OP">GT</field><value name="A"><block type="serial_available" id="3"></block></value><value name="B"><block type="math_number" id="4"><field name="NUM">0</field></block></value></block></value><statement name="DO0"><block type="variables_set" id="5" inline="true"><field name="TYPE">Number</field><field name="VAR">item</field><value name="VALUE"><block type="serial_read" id="6"></block></value><next><block type="controls_if" id="16" inline="false"><mutation else="1"></mutation><value name="IF0"><block type="logic_compare" id="22" inline="true"><field name="OP">EQ</field><value name="A"><block type="variables_get" id="8"><field name="TYPE">Number</field><field name="VAR">item</field></block></value><value name="B"><block type="serial_byte_number" id="10"><field name="NUM">48</field></block></value></block></value><statement name="DO0"><block type="serial_println" id="91" inline="false"><value name="CONTENT"><block type="text" id="97"><field name="TEXT">OK</field></block></value></block></statement><statement name="ELSE"><block type="serial_println" id="116" inline="false"><value name="CONTENT"><block type="text" id="117"><field name="TEXT">NG</field></block></value></block></statement><next><block type="variables_set" id="77" inline="true"><field name="TYPE">Number</field><field name="VAR">item</field><value name="VALUE"><block type="serial_read" id="78"></block></value><next><block type="variables_set" id="79" inline="true"><field name="TYPE">Number</field><field name="VAR">item</field><value name="VALUE"><block type="serial_read" id="80"></block></value></block></next></block></next></block></next></block></statement><next><block type="delay" id="9"><field name="DELAY_TIME">200</field></block></next></block></xml>'>
+                        <button class="light-blue darken-1 waves-effect waves-light btn" data-clipboard-target="#code">
+                            <i class="material-icons">content_copy</i>クリップボードにコピー
+                        </button>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
                     <ul class="section table-of-contents fixed">
-                        <li><a href="#videos">動画</a>
+                        <li>
+                            <a href="#videos">動画</a>
                         </li>
-                        <li><a href="#codes">サンプルコード</a>
+                        <li>
+                            <a href="#codes">サンプルコード</a>
                         </li>
                     </ul>
                 </div>

@@ -18,7 +18,7 @@
 
 <body>
     <script>
-        window.fbAsyncInit = function() {
+        window.fbAsyncInit = function () {
             FB.init({
                 appId: '786847604761953',
                 xfbml: true,
@@ -26,7 +26,7 @@
             });
         };
 
-        (function(d, s, id) {
+        (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) {
                 return;
@@ -45,7 +45,9 @@
                     writeSideNav();
                     $("#top").addClass("active");
                 </script>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                    <i class="mdi-navigation-menu"></i>
+                </a>
             </div>
         </nav>
     </header>
@@ -68,7 +70,9 @@
             <div class="row container">
                 <h2 class="header center orange-text">Arduinoで遊んでみよう！</h2>
                 <div class="row">
-                    <h5 class="header col s12 light">Arduinoと少しの電子部品があれば、いろいろなサンプルにチャレンジできます。<br><br>サンプルを通して、電子工作とプログラミングの基礎がわかれば、自分なりにリミックスして遊んでみてください。</h5>
+                    <h5 class="header col s12 light">Arduinoと少しの電子部品があれば、いろいろなサンプルにチャレンジできます。
+                        <br>
+                        <br>サンプルを通して、電子工作とプログラミングの基礎がわかれば、自分なりにリミックスして遊んでみてください。</h5>
                 </div>
                 <div class="row center">
                     <a href="getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">さあ、はじめよう！</a>
@@ -91,16 +95,26 @@
                 <div class="row">
                     <div class="col s12 m4">
                         <div class="icon-block">
-                            <h2 class="center light-blue-text"><a href="http://code.makewitharduino.com"><i class="medium material-icons">mode_edit</i></a></h2>
-                            <h5 class="center">BlocklyDuino<br>(Web App)</h5>
+                            <h2 class="center light-blue-text">
+                                <a href="http://code.makewitharduino.com">
+                                    <i class="medium material-icons">mode_edit</i>
+                                </a>
+                            </h2>
+                            <h5 class="center">BlocklyDuino
+                                <br>(Web App)</h5>
                             <p class="light">Scratchのように、ブロックを組み合わせて、ArduinoのプログラミングができるオンラインWebエディタです。</p>
                         </div>
                     </div>
 
                     <div class="col s12 m4">
                         <div class="icon-block">
-                            <h2 class="center light-blue-text"><a href="https://chrome.google.com/webstore/detail/blocklyduino-editor/ohncgafccgdbigbbikgkfbkiebahihmb?hl=ja"><i class="medium material-icons">get_app</i></a></h2>
-                            <h5 class="center">BlocklyDuino<br>(Chrome App)</h5>
+                            <h2 class="center light-blue-text">
+                                <a href="https://chrome.google.com/webstore/detail/blocklyduino-editor/ohncgafccgdbigbbikgkfbkiebahihmb?hl=ja">
+                                    <i class="medium material-icons">get_app</i>
+                                </a>
+                            </h2>
+                            <h5 class="center">BlocklyDuino
+                                <br>(Chrome App)</h5>
                             <p class="light">BlocklyDuino(Web App)のChrome App版です。
                                 <br>
                                 <br>オフラインで動作するので、インターネットがなくても、プログラミングが可能です。</p>
@@ -110,8 +124,15 @@
                     <div class="col s12 m4">
 
                         <div class="icon-block">
-                            <h2 class="center light-blue-text"><a href="/sample/scratch/index.html"><i class="medium material-icons">extension</i></a></h2>
-                            <h5 class="center">Scratch Extension<br>(Scratio)<br></h5>
+                            <h2 class="center light-blue-text">
+                                <a href="/sample/scratch/index.html">
+                                    <i class="medium material-icons">extension</i>
+                                </a>
+                            </h2>
+                            <h5 class="center">Scratch Extension
+                                <br>(Scratio)
+                                <br>
+                            </h5>
                             <p class="light">Scratch2.0 オフラインエディターからArduinoをプログラミングできる拡張機能です。
                                 <br>
                                 <br>このツールがあれば、Scratchの中に、Arduinoと連携したプログラムを作成することができます。</p>

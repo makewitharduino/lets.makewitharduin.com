@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
   <title>Let's Make With Arduino!</title>
 
-    <!-- build:style bundle -->
-    <!-- /build -->
-    <!-- build:script jquery -->
-    <!-- /build -->
-    <!-- build:script bundle -->
-    <!-- /build -->
+  <!-- build:style bundle -->
+  <!-- /build -->
+  <!-- build:script jquery -->
+  <!-- /build -->
+  <!-- build:script bundle -->
+  <!-- /build -->
 
 
 </head>
@@ -23,10 +23,11 @@
         <ul id="nav-mobile" class="side-nav fixed"></ul>
         <script type="application/javascript">
           writeSideNav();
-          $("#categoryD").addClass("active");
-          $("#sampleD2").toggleClass("active");
+          $("#sensor").addClass("active");
         </script>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse">
+          <i class="mdi-navigation-menu"></i>
+        </a>
       </div>
     </nav>
   </header>
@@ -69,27 +70,35 @@
             <div class="collection">
               <a href="https://github.com/adafruit/DHT-sensor-library" class="collection-item">DHT</a>
             </div>
-            <p>ライブラリの追加方法は、<a href="https://lets.makewitharduino.com/getting-started.html#add_library">こちら</a>
+            <p>ライブラリの追加方法は、
+              <a href="https://lets.makewitharduino.com/getting-started.html#add_library">こちら</a>
             </p>
           </div>
 
           <div id="codes" class="section scrollspy">
             <h5 class="header">サンプルコード</h5>
-            <a class="light-blue darken-1 waves-effect waves-light btn" href="http://code.makewitharduino.com?url=https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/d2/d2.xml">Webで開く</a>
-            <a class="light-blue darken-1 waves-effect waves-light btn" onclick="sendChrome('https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/d2/d2.xml')">ChromeAppで開く</a>
+            <input id="code" value='<xml xmlns="http://www.w3.org/1999/xhtml"><block type="serial_print" id="1" inline="false" x="13" y="13"><value name="CONTENT"><block type="text" id="2"><field name="TEXT">ondo:</field></block></value><next><block type="serial_print" id="3" inline="false"><value name="CONTENT"><block type="dht_read" id="4"><field name="SENSOR">DHT11</field><field name="PIN">2</field><field name="TYPE">C</field></block></value><next><block type="serial_print" id="5" inline="false"><value name="CONTENT"><block type="text" id="6"><field name="TEXT">C, shitsudo:</field></block></value><next><block type="serial_print" id="7" inline="false"><value name="CONTENT"><block type="dht_read" id="8"><field name="SENSOR">DHT11</field><field name="PIN">2</field><field name="TYPE">h</field></block></value><next><block type="serial_println" id="9" inline="false"><value name="CONTENT"><block type="text" id="10"><field name="TEXT">%</field></block></value><next><block type="delay" id="11"><field name="DELAY_TIME">1000</field></block></next></block></next></block></next></block></next></block></next></block></xml>'>
+            <button class="light-blue darken-1 waves-effect waves-light btn" data-clipboard-target="#code">
+              <i class="material-icons">content_copy</i>クリップボードにコピー
+            </button>
           </div>
         </div>
         <div class="col hide-on-small-only m3 l2">
           <ul class="section table-of-contents fixed">
-            <li><a href="#videos">動画</a>
+            <li>
+              <a href="#videos">動画</a>
             </li>
-            <li><a href="#wiring">配線図</a>
+            <li>
+              <a href="#wiring">配線図</a>
             </li>
-            <li><a href="#parts">使用部品</a>
+            <li>
+              <a href="#parts">使用部品</a>
             </li>
-            <li><a href="#library">ライブラリ</a>
+            <li>
+              <a href="#library">ライブラリ</a>
             </li>
-            <li><a href="#codes">サンプルコード</a>
+            <li>
+              <a href="#codes">サンプルコード</a>
             </li>
           </ul>
         </div>

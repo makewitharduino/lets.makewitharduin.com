@@ -22,10 +22,11 @@
                 <ul id="nav-mobile" class="side-nav fixed"></ul>
                 <script type="application/javascript">
                     writeSideNav();
-                    $("#categoryD").addClass("active");
-                    $("#sampleD1").toggleClass("active");
+                    $("#sensor").addClass("active");
                 </script>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                    <i class="mdi-navigation-menu"></i>
+                </a>
             </div>
         </nav>
     </header>
@@ -62,19 +63,25 @@
                     </div>
                     <div id="codes" class="section scrollspy">
                         <h5 class="header">サンプルコード</h5>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" href="http://code.makewitharduino.com?url=https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/d1/d1.xml">Webで開く</a>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" onclick="sendChrome('https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/d1/d1.xml')">ChromeAppで開く</a>
+                        <input id="code" value='<xml xmlns="http://www.w3.org/1999/xhtml"><block type="ultrasonic_setting" id="1" x="88" y="63"><field name="TRIG">7</field><field name="ECHO">8</field><field name="RESET">9</field><next><block type="ultrasonic_maxrange" id="2"><field name="MAXRANGE">40</field><field name="UNIT">CM</field><next><block type="controls_whileUntil" id="3" inline="false"><field name="MODE">WHILE</field><value name="BOOL"><block type="logic_boolean" id="4"><field name="BOOL">TRUE</field></block></value><statement name="DO"><block type="serial_println" id="5" inline="false"><value name="CONTENT"><block type="ultrasonic_distance" id="6"><field name="UNIT">CM</field></block></value></block></statement></block></next></block></next></block></xml>'>
+                        <button class="light-blue darken-1 waves-effect waves-light btn" data-clipboard-target="#code">
+                            <i class="material-icons">content_copy</i>クリップボードにコピー
+                        </button>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
                     <ul class="section table-of-contents fixed">
-                        <li><a href="#videos">動画</a>
+                        <li>
+                            <a href="#videos">動画</a>
                         </li>
-                        <li><a href="#wiring">配線図</a>
+                        <li>
+                            <a href="#wiring">配線図</a>
                         </li>
-                        <li><a href="#parts">使用部品</a>
+                        <li>
+                            <a href="#parts">使用部品</a>
                         </li>
-                        <li><a href="#codes">サンプルコード</a>
+                        <li>
+                            <a href="#codes">サンプルコード</a>
                         </li>
                     </ul>
                 </div>

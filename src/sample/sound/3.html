@@ -22,10 +22,11 @@
                 <ul id="nav-mobile" class="side-nav fixed"></ul>
                 <script type="application/javascript">
                     writeSideNav();
-                    $("#categoryB").addClass("active");
-                    $("#sampleB3").toggleClass("active");
+                    $("#sound").addClass("active");
                 </script>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                    <i class="mdi-navigation-menu"></i>
+                </a>
             </div>
         </nav>
     </header>
@@ -45,7 +46,8 @@
                         <h5 class="header">動画</h5>
                         <p class="caption">このサンプルでは、Arduinoのデジタル出力ピンにブザーを繋いで、ドレミを奏でています</p>
                         <div class="video-container">
-                          <iframe src="https://vine.co/v/OVPmj773xzw/embed/simple" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+                            <iframe src="https://vine.co/v/OVPmj773xzw/embed/simple" width="300" height="300" frameborder="0"></iframe>
+                            <script src="https://platform.vine.co/static/scripts/embed.js"></script>
                         </div>
                     </div>
                     <div id="wiring" class="section scrollspy">
@@ -61,19 +63,25 @@
                     </div>
                     <div id="codes" class="section scrollspy">
                         <h5 class="header">サンプルコード</h5>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" href="http://code.makewitharduino.com?url=https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/b3/b3.xml">Webで開く</a>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" onclick="sendChrome('https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/b3/b3.xml')">ChromeAppで開く</a>
+                        <input id="code" value='<xml xmlns="http://www.w3.org/1999/xhtml"><block type="tone" id="21" x="63" y="13"><field name="PIN">12</field><field name="FREQ">262</field><next><block type="delay" id="31"><field name="DELAY_TIME">500</field><next><block type="tone" id="32"><field name="PIN">12</field><field name="FREQ">294</field><next><block type="delay" id="33"><field name="DELAY_TIME">500</field><next><block type="tone" id="34"><field name="PIN">12</field><field name="FREQ">330</field><next><block type="delay" id="35"><field name="DELAY_TIME">500</field><next><block type="tone" id="36"><field name="PIN">12</field><field name="FREQ">349</field><next><block type="delay" id="37"><field name="DELAY_TIME">500</field><next><block type="tone" id="46"><field name="PIN">12</field><field name="FREQ">392</field><next><block type="delay" id="47"><field name="DELAY_TIME">500</field><next><block type="tone" id="48"><field name="PIN">12</field><field name="FREQ">440</field><next><block type="delay" id="50"><field name="DELAY_TIME">500</field><next><block type="tone" id="49"><field name="PIN">12</field><field name="FREQ">494</field><next><block type="delay" id="51"><field name="DELAY_TIME">500</field><next><block type="tone" id="52"><field name="PIN">12</field><field name="FREQ">523</field><next><block type="delay" id="53"><field name="DELAY_TIME">500</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>'>
+                        <button class="light-blue darken-1 waves-effect waves-light btn" data-clipboard-target="#code">
+                            <i class="material-icons">content_copy</i>クリップボードにコピー
+                        </button>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
                     <ul class="section table-of-contents fixed">
-                        <li><a href="#videos">動画</a>
+                        <li>
+                            <a href="#videos">動画</a>
                         </li>
-                        <li><a href="#wiring">配線図</a>
+                        <li>
+                            <a href="#wiring">配線図</a>
                         </li>
-                        <li><a href="#parts">使用部品</a>
+                        <li>
+                            <a href="#parts">使用部品</a>
                         </li>
-                        <li><a href="#codes">サンプルコード</a>
+                        <li>
+                            <a href="#codes">サンプルコード</a>
                         </li>
                     </ul>
                 </div>

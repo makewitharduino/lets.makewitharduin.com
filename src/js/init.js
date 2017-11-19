@@ -17,6 +17,17 @@
     }); // end of document ready
 })(jQuery); // end of jQuery name space
 
+$(function () {
+    var clipboard = new Clipboard('.btn');
+    clipboard.on('success', function(e) {
+        Materialize.toast('cliped!', 4000)
+        e.clearSelection();
+    });
+    clipboard.on('error', function(e) {
+      //失敗時の処理
+    });
+});
+
 function writeSideNav() {
     $.ajax({
         url: '/sidenav.html', //パスはcommon.jsが読み込まれたHTMLファイルが基準になります
@@ -41,8 +52,7 @@ function writeFooter() {
 
 function sendChrome(url) {
     var userAgent = window.navigator.userAgent.toLowerCase();
-    if (userAgent.indexOf('chrome') != -1) {
-        console.log(url);
+    if (userAgent.indexOf('chrome') !== -1) {
         // 確認ボタン付きのダイアログボックスを表示する
         var extId = 'ohncgafccgdbigbbikgkfbkiebahihmb';
         chrome.runtime.sendMessage(extId, {

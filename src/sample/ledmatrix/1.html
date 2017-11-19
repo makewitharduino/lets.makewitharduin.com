@@ -23,10 +23,11 @@
                 <ul id="nav-mobile" class="side-nav fixed"></ul>
                 <script type="application/javascript">
                     writeSideNav();
-                    $("#categoryF").addClass("active");
-                    $("#sampleF1").toggleClass("active");
+                    $("#ledmatrix").addClass("active");
                 </script>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                    <i class="mdi-navigation-menu"></i>
+                </a>
             </div>
         </nav>
     </header>
@@ -63,19 +64,25 @@
                     </div>
                     <div id="codes" class="section scrollspy">
                         <h5 class="header">サンプルコード</h5>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" href="http://code.makewitharduino.com?url=https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/f1/f1.xml">Webで開く</a>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" onclick="sendChrome('https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/f1/f1.xml')">ChromeAppで開く</a>
+                        <input id="code" value='<xml xmlns="http://www.w3.org/1999/xhtml"><block type="variables_set" id="261" inline="true" x="38" y="38"><field name="TYPE">Array</field><field name="VAR">casode</field><value name="VALUE"><block type="array_create_with" id="262" inline="false"><mutation items="8"></mutation><value name="ADD0"><block type="inout_digitalpin" id="263"><field name="PIN">0</field></block></value><value name="ADD1"><block type="inout_digitalpin" id="264"><field name="PIN">1</field></block></value><value name="ADD2"><block type="inout_digitalpin" id="265"><field name="PIN">2</field></block></value><value name="ADD3"><block type="inout_digitalpin" id="266"><field name="PIN">3</field></block></value><value name="ADD4"><block type="inout_digitalpin" id="267"><field name="PIN">4</field></block></value><value name="ADD5"><block type="inout_digitalpin" id="268"><field name="PIN">5</field></block></value><value name="ADD6"><block type="inout_digitalpin" id="269"><field name="PIN">6</field></block></value><value name="ADD7"><block type="inout_digitalpin" id="270"><field name="PIN">7</field></block></value></block></value><next><block type="variables_set" id="271" inline="true"><field name="TYPE">Array</field><field name="VAR">anode</field><value name="VALUE"><block type="array_create_with" id="272" inline="false"><mutation items="8"></mutation><value name="ADD0"><block type="inout_digitalpin" id="273"><field name="PIN">8</field></block></value><value name="ADD1"><block type="inout_digitalpin" id="274"><field name="PIN">9</field></block></value><value name="ADD2"><block type="inout_digitalpin" id="275"><field name="PIN">10</field></block></value><value name="ADD3"><block type="inout_digitalpin" id="276"><field name="PIN">11</field></block></value><value name="ADD4"><block type="inout_digitalpin" id="277"><field name="PIN">12</field></block></value><value name="ADD5"><block type="inout_digitalpin" id="278"><field name="PIN">A0</field></block></value><value name="ADD6"><block type="inout_digitalpin" id="279"><field name="PIN">A1</field></block></value><value name="ADD7"><block type="inout_digitalpin" id="280"><field name="PIN">A2</field></block></value></block></value><next><block type="initializes_setup" id="281"><statement name="CONTENT"><block type="controls_for" id="282" inline="true"><field name="VAR">k</field><value name="FROM"><block type="math_number" id="283"><field name="NUM">0</field></block></value><value name="TO"><block type="math_number" id="284"><field name="NUM">7</field></block></value><statement name="DO"><block type="inout_custom_digital_write" id="285" inline="true"><value name="PIN"><block type="array_getIndex" id="286" inline="true"><value name="ITEM"><block type="variables_get" id="287"><field name="TYPE">Array</field><field name="VAR">anode</field></block></value><value name="AT"><block type="variables_get" id="288"><field name="TYPE">Number</field><field name="VAR">k</field></block></value></block></value><value name="STAT"><block type="inout_highlow" id="289"><field name="BOOL">LOW</field></block></value><next><block type="inout_custom_digital_write" id="290" inline="true"><value name="PIN"><block type="array_getIndex" id="291" inline="true"><value name="ITEM"><block type="variables_get" id="292"><field name="TYPE">Array</field><field name="VAR">casode</field></block></value><value name="AT"><block type="variables_get" id="293"><field name="TYPE">Number</field><field name="VAR">k</field></block></value></block></value><value name="STAT"><block type="inout_highlow" id="294"><field name="BOOL">HIGH</field></block></value></block></next></block></statement></block></statement><next><block type="controls_for" id="295" inline="true"><field name="VAR">i</field><value name="FROM"><block type="math_number" id="296"><field name="NUM">0</field></block></value><value name="TO"><block type="math_number" id="297"><field name="NUM">7</field></block></value><statement name="DO"><block type="inout_custom_digital_write" id="298" inline="true"><value name="PIN"><block type="array_getIndex" id="299" inline="true"><value name="ITEM"><block type="variables_get" id="300"><field name="TYPE">Array</field><field name="VAR">casode</field></block></value><value name="AT"><block type="variables_get" id="301"><field name="TYPE">Number</field><field name="VAR">i</field></block></value></block></value><value name="STAT"><block type="inout_highlow" id="302"><field name="BOOL">LOW</field></block></value><next><block type="controls_for" id="303" inline="true"><field name="VAR">j</field><value name="FROM"><block type="math_number" id="304"><field name="NUM">0</field></block></value><value name="TO"><block type="math_number" id="305"><field name="NUM">7</field></block></value><statement name="DO"><block type="inout_custom_digital_write" id="306" inline="true"><value name="PIN"><block type="array_getIndex" id="307" inline="true"><value name="ITEM"><block type="variables_get" id="308"><field name="TYPE">Array</field><field name="VAR">anode</field></block></value><value name="AT"><block type="variables_get" id="309"><field name="TYPE">Number</field><field name="VAR">j</field></block></value></block></value><value name="STAT"><block type="inout_highlow" id="310"><field name="BOOL">HIGH</field></block></value><next><block type="delay" id="311"><field name="DELAY_TIME">100</field><next><block type="inout_custom_digital_write" id="312" inline="true"><value name="PIN"><block type="array_getIndex" id="313" inline="true"><value name="ITEM"><block type="variables_get" id="314"><field name="TYPE">Array</field><field name="VAR">anode</field></block></value><value name="AT"><block type="variables_get" id="315"><field name="TYPE">Number</field><field name="VAR">j</field></block></value></block></value><value name="STAT"><block type="inout_highlow" id="316"><field name="BOOL">LOW</field></block></value></block></next></block></next></block></statement><next><block type="inout_custom_digital_write" id="317" inline="true"><value name="PIN"><block type="array_getIndex" id="318" inline="true"><value name="ITEM"><block type="variables_get" id="319"><field name="TYPE">Array</field><field name="VAR">casode</field></block></value><value name="AT"><block type="variables_get" id="320"><field name="TYPE">Number</field><field name="VAR">i</field></block></value></block></value><value name="STAT"><block type="inout_highlow" id="321"><field name="BOOL">HIGH</field></block></value></block></next></block></next></block></statement></block></next></block></next></block></next></block></xml>'>
+                        <button class="light-blue darken-1 waves-effect waves-light btn" data-clipboard-target="#code">
+                            <i class="material-icons">content_copy</i>クリップボードにコピー
+                        </button>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
                     <ul class="section table-of-contents fixed">
-                        <li><a href="#videos">動画</a>
+                        <li>
+                            <a href="#videos">動画</a>
                         </li>
-                        <li><a href="#wiring">配線図</a>
+                        <li>
+                            <a href="#wiring">配線図</a>
                         </li>
-                        <li><a href="#parts">使用部品</a>
+                        <li>
+                            <a href="#parts">使用部品</a>
                         </li>
-                        <li><a href="#codes">サンプルコード</a>
+                        <li>
+                            <a href="#codes">サンプルコード</a>
                         </li>
                     </ul>
                 </div>

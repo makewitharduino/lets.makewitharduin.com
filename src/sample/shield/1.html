@@ -22,10 +22,11 @@
                 <ul id="nav-mobile" class="side-nav fixed"></ul>
                 <script type="application/javascript">
                     writeSideNav();
-                    $("#categoryE").addClass("active");
-                    $("#sampleE1").toggleClass("active");
+                    $("#shield").addClass("active");
                 </script>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                    <i class="mdi-navigation-menu"></i>
+                </a>
             </div>
         </nav>
     </header>
@@ -62,19 +63,25 @@
                     </div>
                     <div id="codes" class="section scrollspy">
                         <h5 class="header">サンプルコード</h5>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" href="http://code.makewitharduino.com?url=https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/e1/e1.xml">Webで開く</a>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" onclick="sendChrome('https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/e1/e1.xml')">ChromeAppで開く</a>
+                        <input id="code" value='<xml xmlns="http://www.w3.org/1999/xhtml"><block type="lcd_init" id="1" x="63" y="13"><field name="RS">8</field><field name="RW">-</field><field name="ENABLE">9</field><field name="D4">4</field><field name="D5">5</field><field name="D6">6</field><field name="D7">7</field><next><block type="lcd_clear" id="2"><next><block type="lcd_begin" id="17"><field name="COLS">16</field><field name="ROWS">2</field><next><block type="lcd_clear" id="65"><next><block type="delay" id="66"><field name="DELAY_TIME">1000</field><next><block type="lcd_setcursor" id="4"><field name="COL">0</field><field name="ROW">0</field><next><block type="lcd_print" id="5" inline="true"><value name="PRINT"><block type="text" id="6"><field name="TEXT">Hello!</field></block></value><next><block type="delay" id="41"><field name="DELAY_TIME">1000</field><next><block type="lcd_setcursor" id="7"><field name="COL">0</field><field name="ROW">1</field><next><block type="lcd_print" id="8" inline="true"><value name="PRINT"><block type="text" id="9"><field name="TEXT">EveryOne.</field></block></value><next><block type="delay" id="45"><field name="DELAY_TIME">1000</field><next><block type="lcd_setcursor" id="42"><field name="COL">0</field><field name="ROW">0</field><next><block type="lcd_print" id="43" inline="true"><value name="PRINT"><block type="text" id="44"><field name="TEXT">Lets</field></block></value><next><block type="delay" id="46"><field name="DELAY_TIME">1000</field><next><block type="lcd_setcursor" id="47"><field name="COL">0</field><field name="ROW">1</field><next><block type="lcd_print" id="48" inline="true"><value name="PRINT"><block type="text" id="49"><field name="TEXT">Enjoy Arduino.</field></block></value><next><block type="delay" id="50"><field name="DELAY_TIME">1000</field><next><block type="lcd_clear" id="59"><next><block type="lcd_setcursor" id="51"><field name="COL">0</field><field name="ROW">0</field><next><block type="lcd_print" id="52" inline="true"><value name="PRINT"><block type="text" id="53"><field name="TEXT">ByeBye!</field></block></value><next><block type="delay" id="67"><field name="DELAY_TIME">1000</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>'>
+                        <button class="light-blue darken-1 waves-effect waves-light btn" data-clipboard-target="#code">
+                            <i class="material-icons">content_copy</i>クリップボードにコピー
+                        </button>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
                     <ul class="section table-of-contents fixed">
-                        <li><a href="#videos">動画</a>
+                        <li>
+                            <a href="#videos">動画</a>
                         </li>
-                        <li><a href="#wiring">配線図</a>
+                        <li>
+                            <a href="#wiring">配線図</a>
                         </li>
-                        <li><a href="#parts">使用部品</a>
+                        <li>
+                            <a href="#parts">使用部品</a>
                         </li>
-                        <li><a href="#codes">サンプルコード</a>
+                        <li>
+                            <a href="#codes">サンプルコード</a>
                         </li>
                     </ul>
                 </div>

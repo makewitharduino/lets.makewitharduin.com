@@ -22,10 +22,11 @@
                 <ul id="nav-mobile" class="side-nav fixed"></ul>
                 <script type="application/javascript">
                     writeSideNav();
-                    $("#categoryG").addClass("active");
-                    $("#sampleG1").toggleClass("active");
+                    $("#serial").addClass("active");
                 </script>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                    <i class="mdi-navigation-menu"></i>
+                </a>
             </div>
         </nav>
     </header>
@@ -45,20 +46,25 @@
                         <h5 class="header">動画</h5>
                         <p class="caption">このサンプルでは、Arduinoからパソコンにシリアル通信で文字を送っています。</p>
                         <div class="video-container">
-                          <iframe src="https://vine.co/v/ehBh0pMJ0pO/embed/simple" width="300" height="300" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+                            <iframe src="https://vine.co/v/ehBh0pMJ0pO/embed/simple" width="300" height="300" frameborder="0"></iframe>
+                            <script src="https://platform.vine.co/static/scripts/embed.js"></script>
                         </div>
                     </div>
                     <div id="codes" class="section scrollspy">
                         <h5 class="header">サンプルコード</h5>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" href="http://code.makewitharduino.com?url=https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/g1/g1.xml">Webで開く</a>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" onclick="sendChrome('https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/g1/g1.xml')">ChromeAppで開く</a>
+                        <input id="code" value='<xml xmlns="http://www.w3.org/1999/xhtml"><block type="serial_println" id="118" inline="false" x="63" y="38"><value name="CONTENT"><block type="text" id="119"><field name="TEXT">Hello</field></block></value><next><block type="delay" id="120"><field name="DELAY_TIME">1000</field><next><block type="serial_println" id="121" inline="false"><value name="CONTENT"><block type="text" id="122"><field name="TEXT">World!</field></block></value><next><block type="delay" id="123"><field name="DELAY_TIME">1000</field></block></next></block></next></block></next></block></xml>'>
+                        <button class="light-blue darken-1 waves-effect waves-light btn" data-clipboard-target="#code">
+                            <i class="material-icons">content_copy</i>クリップボードにコピー
+                        </button>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
                     <ul class="section table-of-contents fixed">
-                        <li><a href="#videos">動画</a>
+                        <li>
+                            <a href="#videos">動画</a>
                         </li>
-                        <li><a href="#codes">サンプルコード</a>
+                        <li>
+                            <a href="#codes">サンプルコード</a>
                         </li>
                     </ul>
                 </div>

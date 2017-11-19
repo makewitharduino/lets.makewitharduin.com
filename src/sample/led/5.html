@@ -23,10 +23,11 @@
                 <ul id="nav-mobile" class="side-nav fixed"></ul>
                 <script type="application/javascript">
                     writeSideNav();
-                    $("#categoryA").addClass("active");
-                    $("#sampleA5").toggleClass("active");
+                    $("#led").addClass("active");
                 </script>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                    <i class="mdi-navigation-menu"></i>
+                </a>
             </div>
         </nav>
     </header>
@@ -52,7 +53,7 @@
                     <div id="wiring" class="section scrollspy">
 
                         <h5 class="header">配線図</h5>
-                      <img class="materialboxed" width="100%" src="https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/a5/wiring.png">
+                        <img class="materialboxed" width="100%" src="https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/a5/wiring.png">
                     </div>
                     <div id="parts" class="section scrollspy">
                         <h5 class="header">使用部品</h5>
@@ -64,19 +65,25 @@
                     </div>
                     <div id="codes" class="section scrollspy">
                         <h5 class="header">サンプルコード</h5>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" href="http://code.makewitharduino.com?url=https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/a5/a5.xml">Webで開く</a>
-                      <a class="light-blue darken-1 waves-effect waves-light btn" onclick="sendChrome('https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/a5/a5.xml')">ChromeAppで開く</a>
+                        <input id="code" value='<xml xmlns="http://www.w3.org/1999/xhtml"><block type="inout_analog_write" id="22" inline="true" x="113" y="88"><field name="PIN">11</field><value name="NUM"><block type="math_map" id="12" inline="false"><field name="TOLOW">0</field><field name="TOHIGH">255</field><value name="VALUE"><block type="inout_analog_read" id="36"><field name="PIN">A0</field></block></value></block></value></block></xml>'>
+                        <button class="light-blue darken-1 waves-effect waves-light btn" data-clipboard-target="#code">
+                            <i class="material-icons">content_copy</i>クリップボードにコピー
+                        </button>
                     </div>
                 </div>
                 <div class="col hide-on-small-only m3 l2">
                     <ul class="section table-of-contents fixed">
-                        <li><a href="#videos">動画</a>
+                        <li>
+                            <a href="#videos">動画</a>
                         </li>
-                        <li><a href="#wiring">配線図</a>
+                        <li>
+                            <a href="#wiring">配線図</a>
                         </li>
-                        <li><a href="#parts">使用部品</a>
+                        <li>
+                            <a href="#parts">使用部品</a>
                         </li>
-                        <li><a href="#codes">サンプルコード</a>
+                        <li>
+                            <a href="#codes">サンプルコード</a>
                         </li>
                     </ul>
                 </div>
