@@ -50,6 +50,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '<%= pkg.path.src %>',
                     src: [
+                        'CNAME',
                         'images/*',
                         'fonts/*/*',
                         'footer.html',
