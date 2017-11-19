@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Let's Make With Arduino!</title>
+
+    <!-- build:style bundle -->
+    <!-- /build -->
+    <!-- build:script jquery -->
+    <!-- /build -->
+    <!-- build:script bundle -->
+    <!-- /build -->
+
+</head>
+
+<body>
+    <header>
+        <nav class="page-list teal" role="navigation">
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="side-nav fixed"></ul>
+                <script type="application/javascript">
+                    writeSideNav();
+                    $("#shield").addClass("active");
+                </script>
+                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="section page-title teal" id="index-banner">
+            <div class="row">
+                <div class="col s12">
+                    <h4 class="header center-on-small-only">サンプルE2</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m9 l10">
+                    <div id="videos" class="section scrollspy">
+                        <h5 class="header">動画</h5>
+                        <p class="caption">このサンプルでは、ディスプレイに文字をスクロール表示させています。</p>
+                        <div class="video-container">
+                            <iframe src="https://vine.co/v/OlU3j2xXVpT/embed/simple" width="300" height="300" frameborder="0"></iframe>
+                            <script src="https://platform.vine.co/static/scripts/embed.js"></script>
+                        </div>
+                    </div>
+                    <div id="wiring" class="section scrollspy">
+
+                        <h5 class="header">配線図</h5>
+                        <img class="materialboxed" width="100%" src="https://raw.githubusercontent.com/makewitharduino/BlocklyDuinoSample/master/e2/wiring.png">
+                    </div>
+                    <div id="parts" class="section scrollspy">
+                        <h5 class="header">使用部品</h5>
+                        <div class="collection">
+                            <a href="http://akizukidenshi.com/catalog/g/gM-07029/" class="collection-item">LCD Keypad Shield</a>
+                        </div>
+                    </div>
+                    <div id="codes" class="section scrollspy">
+                        <h5 class="header">サンプルコード</h5>
+                        <input id="code" value='<xml xmlns="http://www.w3.org/1999/xhtml"><block type="lcd_init" id="1" x="128" y="59"><field name="RS">8</field><field name="RW">-</field><field name="ENABLE">9</field><field name="D4">4</field><field name="D5">5</field><field name="D6">6</field><field name="D7">7</field><next><block type="initializes_setup" id="83"><statement name="CONTENT"><block type="lcd_begin" id="2"><field name="COLS">16</field><field name="ROWS">2</field></block></statement><next><block type="variables_set" id="7" inline="true"><field name="TYPE">String</field><field name="VAR">s</field><value name="VALUE"><block type="text" id="8"><field name="TEXT">Hello World!</field></block></value><next><block type="lcd_setcursor" id="4"><field name="COL">16</field><field name="ROW">0</field><next><block type="lcd_autoscroll" id="69"><next><block type="controls_for" id="9" inline="true"><field name="VAR">i</field><value name="FROM"><block type="math_number" id="10"><field name="NUM">0</field></block></value><value name="TO"><block type="math_number" id="11"><field name="NUM">31</field></block></value><statement name="DO"><block type="controls_if" id="12" inline="false"><mutation else="1"></mutation><value name="IF0"><block type="logic_compare" id="13" inline="true"><field name="OP">LT</field><value name="A"><block type="variables_get" id="14"><field name="TYPE">Number</field><field name="VAR">i</field></block></value><value name="B"><block type="text_length" id="15" inline="true"><value name="VALUE"><block type="variables_get" id="16"><field name="TYPE">String</field><field name="VAR">s</field></block></value></block></value></block></value><statement name="DO0"><block type="lcd_print" id="17" inline="true"><value name="PRINT"><block type="text_charAt" id="18" inline="true"><value name="VALUE"><block type="variables_get" id="19"><field name="TYPE">String</field><field name="VAR">s</field></block></value><value name="INDEX"><block type="variables_get" id="20"><field name="TYPE">Number</field><field name="VAR">i</field></block></value></block></value></block></statement><statement name="ELSE"><block type="lcd_print" id="21" inline="true"><value name="PRINT"><block type="text" id="22"><field name="TEXT"> </field></block></value></block></statement><next><block type="delay" id="23"><field name="DELAY_TIME">500</field></block></next></block></statement><next><block type="lcd_noautoscroll" id="24"><next><block type="lcd_clear" id="95"></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>'>
+                        <button class="light-blue darken-1 waves-effect waves-light btn" data-clipboard-target="#code">
+                            <i class="material-icons">content_copy</i>クリップボードにコピー
+                        </button>
+                    </div>
+                </div>
+                <div class="col hide-on-small-only m3 l2">
+                    <ul class="section table-of-contents fixed">
+                        <li>
+                            <a href="#videos">動画</a>
+                        </li>
+                        <li>
+                            <a href="#wiring">配線図</a>
+                        </li>
+                        <li>
+                            <a href="#parts">使用部品</a>
+                        </li>
+                        <li>
+                            <a href="#codes">サンプルコード</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer teal">
+    </footer>
+</body>
+
+</html>

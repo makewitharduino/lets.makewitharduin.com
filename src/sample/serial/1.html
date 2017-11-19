@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Let's Make With Arduino!</title>
+
+    <!-- build:style bundle -->
+    <!-- /build -->
+    <!-- build:script jquery -->
+    <!-- /build -->
+    <!-- build:script bundle -->
+    <!-- /build -->
+
+</head>
+
+<body>
+    <header>
+        <nav class="page-list teal" role="navigation">
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="side-nav fixed"></ul>
+                <script type="application/javascript">
+                    writeSideNav();
+                    $("#serial").addClass("active");
+                </script>
+                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="section page-title teal" id="index-banner">
+            <div class="row">
+                <div class="col s12">
+                    <h4 class="header center-on-small-only">サンプルG1</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m9 l10">
+                    <div id="videos" class="section scrollspy">
+                        <h5 class="header">動画</h5>
+                        <p class="caption">このサンプルでは、Arduinoからパソコンにシリアル通信で文字を送っています。</p>
+                        <div class="video-container">
+                            <iframe src="https://vine.co/v/ehBh0pMJ0pO/embed/simple" width="300" height="300" frameborder="0"></iframe>
+                            <script src="https://platform.vine.co/static/scripts/embed.js"></script>
+                        </div>
+                    </div>
+                    <div id="codes" class="section scrollspy">
+                        <h5 class="header">サンプルコード</h5>
+                        <input id="code" value='<xml xmlns="http://www.w3.org/1999/xhtml"><block type="serial_println" id="118" inline="false" x="63" y="38"><value name="CONTENT"><block type="text" id="119"><field name="TEXT">Hello</field></block></value><next><block type="delay" id="120"><field name="DELAY_TIME">1000</field><next><block type="serial_println" id="121" inline="false"><value name="CONTENT"><block type="text" id="122"><field name="TEXT">World!</field></block></value><next><block type="delay" id="123"><field name="DELAY_TIME">1000</field></block></next></block></next></block></next></block></xml>'>
+                        <button class="light-blue darken-1 waves-effect waves-light btn" data-clipboard-target="#code">
+                            <i class="material-icons">content_copy</i>クリップボードにコピー
+                        </button>
+                    </div>
+                </div>
+                <div class="col hide-on-small-only m3 l2">
+                    <ul class="section table-of-contents fixed">
+                        <li>
+                            <a href="#videos">動画</a>
+                        </li>
+                        <li>
+                            <a href="#codes">サンプルコード</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer teal">
+    </footer>
+</body>
+
+</html>

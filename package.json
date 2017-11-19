@@ -1,0 +1,35 @@
+{
+  "name": "letsmakewitharduino",
+  "version": "1.0.0",
+  "description": "let's makewitharduino",
+  "main": "index.html",
+  "dependencies": {
+    "clipboard": "^1.7.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-gh-pages": "^2.0.0",
+    "grunt-html-build": "^0.7.1",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makewitharduino/BlocklyDuinoSample.git"
+  },
+  "author": "okhiroyuki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makewitharduino/BlocklyDuinoSample/issues"
+  },
+  "homepage": "https://github.com/makewitharduino/BlocklyDuinoSample#readme"
+}

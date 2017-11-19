@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@makewitarduino" />
+  <meta name="twitter:title" content="Let's makewith arduino!" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="/images/logo.JPG" />
+  <title>Let's Make With Arduino!</title>
+
+  <!-- build:style bundle -->
+  <!-- /build -->
+  <!-- build:script jquery -->
+  <!-- /build -->
+  <!-- build:script bundle -->
+  <!-- /build -->
+
+</head>
+
+<body>
+  <header>
+    <nav class="teal page-list" role="navigation">
+      <div class="nav-wrapper">
+        <ul id="nav-mobile" class="side-nav fixed"></ul>
+        <script type="application/javascript">
+          writeSideNav();
+          $("#info").addClass("active");
+        </script>
+        <a href="#" data-activates="nav-mobile" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="section page-title teal" id="index-banner">
+      <div class="row">
+        <div class="col s12">
+          <h4 class="header center-on-small-only">はじめに</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m9 l10">
+          <h3>ようこそ！</h3>
+          <p>このサイトでは、Arduinoでいろいろ作って、遊びたい人のために様々なサンプルを紹介しています。</p>
+          <p>まずは動画を眺めて、面白そうな作品があったら、配線を参考にArduinoと部品をつないで、サンプルコードを書き込んでみてください。</p>
+          <p>そして、自分なりのアイデアでコードを書き換えてみてください。</p>
+
+          <div id="tools" class="section scrollspy">
+            <h3>Arduinoプログラミングに必要なもの</h3>
+          </div>
+          <div id="hardware" class="section scrollspy">
+            <h4>ハードウェア</h4>
+            <div class="row">
+              <div class="col s12 m6">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="https://docid81hrs3j1.cloudfront.net/contents/large/gettingstartedarduino_1.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p>はじめてなら、このキットでほぼ揃います。</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="http://www.amazon.co.jp/gp/product/B0025Y6C5G/ref=as_li_ss_tl?ie=UTF8&amp;camp=247&amp;creative=7399&amp;creativeASIN=B0025Y6C5G&amp;linkCode=as2&amp;tag=makewitharduino-22">Arduinoをはじめようキット</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="https://docid81hrs3j1.cloudfront.net/contents/large/789_001.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p>Arduino単体なら、これ。
+                      <br>壊れても、交換してもらえますよ！</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="http://www.amazon.co.jp/gp/product/B0044X2E5S/ref=as_li_ss_tl?ie=UTF8&amp;camp=247&amp;creative=7399&amp;creativeASIN=B0044X2E5S&amp;linkCode=as2&amp;tag=makewitharduino-22">永久保証付きArduino</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m6">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="http://akizukidenshi.com/img/goods/L/P-05294.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p>Arduinoに電子部品を繋げるときに、役立つ部品です。
+                      <br>複数あっても、邪魔になりませんよ。</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="http://akizukidenshi.com/catalog/g/gP-05294/">ブレッドボード</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="http://akizukidenshi.com/img/goods/C/C-05159.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p>Arduinoに電子部品を繋げるときに、役立つ部品です。
+                      <br>たくさんあったほうがいいですよ。</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="http://akizukidenshi.com/catalog/g/gC-05159/">ジャンパーコード</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="software" class="section scrollspy">
+            <h4>ソフトウェア</h4>
+            <p>本サイトでは、下記のソフトウェアの使用を推奨しています。</p>
+            <div class="row">
+              <div class="col s12">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                  <div class="row valign-wrapper">
+                    <div class="col s2">
+                      <a href="http://www.arduino.cc/en/Main/Software">
+                        <img src="http://www.arduino.cc/en/pub/skins/arduinoWide/img/ArduinoAPP-01.svg" alt="" class="circle responsive-img">
+                      </a>
+                    </div>
+                    <div class="col s10">
+                      <span class="black-text">
+                        <h5>Arduino IDE</h5>
+                        <p>プログラムの作成から、Arduinoへのプログラムの書き込みまで行えます。</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                  <div class="row valign-wrapper">
+                    <div class="col s2">
+                      <a href="https://chrome.google.com/webstore/detail/blocklyduino-editor/ohncgafccgdbigbbikgkfbkiebahihmb?hl=ja">
+                        <img src="./images/blocklyduino_icon.svg" alt="" class="responsive-img">
+                      </a>
+                    </div>
+                    <div class="col s10">
+                      <span class="black-text">
+                        <h5>BlocklyDuino (Chrome App)</h5>
+                        <p>Scratchのように、ブロックを組み合わせてArduinoプログラミングができます。
+                          <br>インターネットがなくても、プログラミングが可能です。</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="flow" class="section scrollspy">
+            <h3>Arduinoプログラミングの流れ</h3>
+            <div class="row">
+              <div class="col s12">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                  <div class="row valign-wrapper">
+                    <div class="col s2">
+                      <i class="medium material-icons">looks_one</i>
+                    </div>
+                    <div class="col s10">
+                      <span class="black-text">
+                        <h5>配線&amp;プログラミング</h5>
+                        <p>サンプルを参考に、配線とプログラムを編集する。</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                  <div class="row valign-wrapper">
+                    <div class="col s2">
+                      <i class="medium material-icons">looks_two</i>
+                    </div>
+                    <div class="col s10">
+                      <span class="black-text">
+                        <h5>プログラムの保存</h5>
+                        <p>作成したプログラムをローカルPCに保存する。</p>
+                        <p>詳しくは、
+                          <a href="#file-save">こちら</a>
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                  <div class="row valign-wrapper">
+                    <div class="col s2">
+                      <i class="medium material-icons">looks_3</i>
+                    </div>
+                    <div class="col s10">
+                      <span class="black-text">
+                        <h5>Arduino IDEでファイル読込</h5>
+                        <p>BlocklyDuino Editorで保存したファイルをArduino IDEから読み込む。</p>
+                        <p>Arduino IDEの外部エディタ機能を有効にすると、一度読み込んだファイルを編集すると、自動的に読み込んでくれるよ。</p>
+                        <p>詳しくは、
+                          <a href="#ide-setting">こちら</a>
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                  <div class="row valign-wrapper">
+                    <div class="col s2">
+                      <i class="medium material-icons">looks_4</i>
+                    </div>
+                    <div class="col s10">
+                      <span class="black-text">
+                        <h5>ライブラリの追加</h5>
+                        <p>必要に応じて、ライブラリをArduino IDEに追加する。</p>
+                        <p>詳しくは、
+                          <a href="#add-library">こちら</a>
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                  <div class="row valign-wrapper">
+                    <div class="col s2">
+                      <i class="medium material-icons">looks_5</i>
+                    </div>
+                    <div class="col s10">
+                      <span class="black-text">
+                        <h5>Ardunoへのプログラム書き込み</h5>
+                        <p>プログラムをArduinoへ書き込む。
+                          <br>エラーがでたら、プログラムのコードを見直す。</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="howto" class="section scrollspy">
+            <h3>具体的なやり方</h3>
+          </div>
+          <div id="file-save" class="section scrollspy">
+            <h4>BlocklyDuino Editorでのファイル保存</h4>
+            <p>1. まず、保存先となるフォルダを選択するダイアログが表示される。</p>
+            <img class="responsive-img" src="./images/file-save01.png">
+            <p>2. その後、ファイル名を入力するためのダイアログが表示される。</p>
+            <img class="responsive-img" src="./images/file-save02.png">
+            <p>3. ファイルが保存できると、指定したフォルダの中にArduinoが取り扱うinoファイルとBlocklyDuinoのxmlファイルが保存される。</p>
+            <img class="responsive-img" src="./images/file-save03.png">
+          </div>
+          <div id="ide-setting" class="section scrollspy">
+            <h4>Arduino IDEの外部エディタ機能の有効化</h4>
+            <p>1. Arduino IDEの設定画面を開く。</p>
+            <img class="responsive-img" src="./images/ide-setting1.png">
+            <p>2. 外部エディタ機能にチェックを入れる。</p>
+            <img class="responsive-img" src="./images/ide-setting2.png">
+            <p>3. 外部エディタ機能が有効になると、エディタ部分がグレーになり、編集できなくなる。</p>
+            <img class="responsive-img" src="./images/ide-setting3.png">
+          </div>
+          <div id="add-library" class="section scrollspy">
+            <h4>ライブラリの追加</h4>
+            <p>1. Arduino IDEのライブラリ管理を開く。</p>
+            <img class="responsive-img" src="./images/add-library1.png">
+            <p>2. 必要なライブラリを検索する。</p>
+            <img class="responsive-img" src="./images/add-library2.png">
+            <p>3. 必要なライブラリが見つかれば、インストールする。</p>
+            <img class="responsive-img" src="./images/add-library3.png">
+            <p>4. ちゃんとインストールできると、下のように表示される。</p>
+            <img class="responsive-img" src="./images/add-library4.png">
+          </div>
+        </div>
+
+        <div class="col hide-on-small-only m3 l2">
+          <ul class="section table-of-contents fixed">
+            <li>
+              <a class="level1" href="#tools">必要なもの</a>
+            </li>
+            <li>
+              <a class="level2" href="#hardware">ハードウェア</a>
+            </li>
+            <li>
+              <a class="level2" href="#software">ソフトウェア</a>
+            </li>
+            <li>
+              <a class="level1" href="#flow">プログラミングの流れ</a>
+            </li>
+            <li>
+              <a class="level1" href="#howto">具体的なやり方</a>
+            </li>
+            <li>
+              <a class="level2" href="#file-save">ファイルの保存</a>
+            </li>
+            <li>
+              <a class="level2" href="#ide-setting">外部エディタ機能の有効化</a>
+            </li>
+            <li>
+              <a class="level2" href="#add-library">ライブラリの追加</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </main>
+
+  <footer class="page-footer teal ">
+  </footer>
+</body>
+
+</html>
