@@ -109,12 +109,6 @@ module.exports = function (grunt) {
                     hostname: 'localhost'
                 }
             }
-        },
-        'gh-pages': {
-            options: {
-                base: 'dist'
-            },
-            src: ['**']
         }
     });
     grunt.loadNpmTasks('grunt-html-build');
@@ -123,8 +117,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-csslint');
-    grunt.loadNpmTasks('grunt-gh-pages');
 
     grunt.registerTask('test', ['clean', 'cssmin', 'uglify', 'copy', 'htmlbuild', 'connect']);
-    grunt.registerTask('build', ['clean', 'cssmin', 'uglify', 'copy', 'htmlbuild','gh-pages']);
 }
