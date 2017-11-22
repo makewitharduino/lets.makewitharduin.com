@@ -55,7 +55,8 @@ module.exports = function (grunt) {
                         'images/**/*.png',
                         'fonts/**/*',
                         'footer.html',
-                        'sidenav.html'
+                        'sidenav.html',
+                        'google3852da40aafa8028.html'
                     ],
                     dest: '<%= pkg.path.dest %>/'
                 }],
