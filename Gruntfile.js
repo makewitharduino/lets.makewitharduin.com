@@ -120,4 +120,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-csslint');
 
     grunt.registerTask('test', ['clean', 'cssmin', 'uglify', 'copy', 'htmlbuild', 'connect']);
-}
+    grunt.registerTask('build', ['clean', 'cssmin', 'uglify', 'copy', 'htmlbuild']);
+};
