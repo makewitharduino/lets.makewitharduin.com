@@ -110,6 +110,20 @@ module.exports = function (grunt) {
                     hostname: 'localhost'
                 }
             }
+        },
+        ftpush: {
+            build: {
+                auth: {
+                    host: 'okhiroyuki.m3.valueserver.jp',
+                    port: 21,
+                    authKey: 'key1'
+                },
+                src: 'dist',
+                dest: '/public_html/lets.makewitharduino.com',
+                simple: false,
+                useList: false,
+                cachePath: '.grunt/ftpush/ftpush.json'
+            }
         }
     });
     grunt.loadNpmTasks('grunt-html-build');
@@ -118,7 +132,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-csslint');
+    grunt.loadNpmTasks('grunt-ftpush');
 
     grunt.registerTask('test', ['clean', 'cssmin', 'uglify', 'copy', 'htmlbuild', 'connect']);
-    grunt.registerTask('build', ['clean', 'cssmin', 'uglify', 'copy', 'htmlbuild']);
+    grunt.registerTask('build', ['clean', 'cssmin', 'uglify', 'copy', 'htmlbuild','ftpush']);
 };
